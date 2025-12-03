@@ -1,0 +1,252 @@
+/* Colores principales */
+.bg-orange {
+    background: #ff6b35 !important;
+}
+
+/* Tabla de inventario */
+.inventario-table thead th {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 8px;
+}
+
+.inventario-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.inventario-table tbody tr:hover {
+    background-color: rgba(255, 107, 53, 0.05) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Badges de estado */
+.badge {
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.bg-success { background-color: #28a745 !important; }
+.bg-primary { background-color: #007bff !important; }
+.bg-warning { background-color: #ffc107 !important; color: #000 !important; }
+.bg-danger { background-color: #dc3545 !important; }
+.bg-secondary { background-color: #6c757d !important; }
+.bg-info { background-color: #17a2b8 !important; }
+.bg-light { background-color: #f8f9fa !important; color: #000 !important; }
+
+/* Estados de garantía */
+.bg-garantia-vigente { background-color: #28a745 !important; }
+.bg-garantia-por-vencer { background-color: #ffc107 !important; color: #000 !important; }
+.bg-garantia-vencida { background-color: #6c757d !important; }
+.bg-garantia-urgente { background-color: #dc3545 !important; }
+
+/* Cards y headers */
+.card-header.bg-orange {
+    background: #ff6b35 !important;
+    border-bottom: none;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Botones */
+.btn-outline-primary {
+    border-color: #ff6b35;
+    color: #ff6b35;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff6b35;
+    border-color: #ff6b35;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Filtros */
+#filtrosInventario .form-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    color: #495057;
+}
+
+#filtrosInventario .form-control-sm,
+#filtrosInventario .form-select-sm {
+    font-size: 0.8rem;
+}
+
+/* Autocomplete */
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1050 !important;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.ui-menu-item {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.875rem;
+}
+
+.ui-menu-item:last-child {
+    border-bottom: none;
+}
+
+.ui-state-active {
+    background-color: #ff6b35 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Checkboxes */
+.item-checkbox {
+    cursor: pointer;
+}
+
+#selectAll {
+    cursor: pointer;
+}
+
+/* Campo de cantidad */
+#cantidadContainer {
+    transition: all 0.3s ease;
+}
+
+#cantidadAsignacion {
+    border-color: #ff6b35;
+}
+
+#cantidadAsignacion:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+/* Tooltips */
+.tooltip {
+    z-index: 1070;
+}
+
+/* Modal de reportes */
+.modal-header.bg-primary {
+    background: #007bff !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inventario-table {
+        font-size: 0.8rem;
+    }
+    
+    .inventario-table thead th {
+        font-size: 0.8rem;
+        padding: 8px 4px;
+    }
+    
+    .badge {
+        font-size: 0.7em;
+        padding: 0.25em 0.5em;
+    }
+    
+    #filtrosInventario .col-md-2 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Animaciones */
+.table-hover tbody tr {
+    transition: all 0.2s ease;
+}
+
+.badge {
+    transition: all 0.2s ease;
+}
+
+/* Estados hover para badges */
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Scrollbar personalizado */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #ff6b35;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #e55a2b;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Estilos para el modal de QR */
+#popupQR {
+    backdrop-filter: blur(5px);
+}
+
+/* Estilos para los filtros de fecha */
+#fechaDesdeContainer,
+#fechaHastaContainer,
+#garantiaMinContainer,
+#garantiaMaxContainer {
+    transition: all 0.3s ease;
+}
+
+/* Estilos para los botones de acción */
+.btn-group-inventario .btn {
+    border-radius: 0.375rem;
+    margin: 0 2px;
+}
+
+/* Estilos para las celdas de precio */
+.inventario-table td:nth-child(6) {
+    font-weight: 500;
+    color: #28a745;
+}
+
+/* Estilos para las celdas de cantidad */
+.inventario-table td:nth-child(5) {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Efectos de sombra para cards */
+.card-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Estilos para el header de la página */
+.border-bottom {
+    border-color: #dee2e6 !important;
+}
